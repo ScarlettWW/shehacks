@@ -1,0 +1,28 @@
+
+h1#firstQuestion{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rebeccapurple;
+}
+
+h1#secondQuestion{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blue;
+}
+p#jsclass{
+    font-size:50px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Kalam', cursive;
+    background-color: blanchedalmond;
+    
+}
+
+li{
+    font-style: oblique;
+    font-size: 23px;
+}
+
+p{
+    font-size: 22px;
+    font-style: inherit;
+}

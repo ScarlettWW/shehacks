@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("bkg3.jpg");
+                background-size:cover;
+            }    
+            
+        </style>
+        <title>
+            Investment Wizard
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Kalam|Permanent+Marker" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+        var customerName = prompt("Please enter your name", "");
+        if (customerName!= null) {
+            document.write("<p id='jsclass'>Hello " + customerName + "! Welcome to Intelligent Investment </p>");
+            }
+        </script>
+        <script type="text/javascript" src="main.js"></script>
+        <meta name ="investment website" content="give you inevestment suggestions">
+    </head>
+    
+    <body>
+
+        <hr/>
+        <h1 id="firstQuestion">What is your <i>investment style</i>?</h1>
+        <ul><b>
+            <li>Cautious: I want to preserve my initial investment, and understand this may limit my returns.</li>
+            <li>Sensitive: I want reasonable safety and security, but I'm comfortable with moderate fluctuation in my investment.</li>
+            <li>Comfortable: I'd like a combination of income and potential growth so I'm comfortable with moderate fluctuation in my investments.</li>
+            <li>Bold: I want my investments to grow so I'm willing to accept very substantial fluctuations in value for potentially higher returns.</li>
+            </b>
+        </ul>
+
+        <select id="investmentstyle"> 
+            <option value = "cautious">Cautious</option>
+            <option value = "sensitive">Sensitive</option>
+            <option value ="comfortable">Comfortable</option>
+            <option value ="bold">Bold</option>        
+        </select>
+
+        <h1 style="text-align: left" id="secondQuestion">How much <i>money</i> would you like to invest every month?(US Dollars)</h1>
+        <input type="number" id="moneyHave" value=""><br>
+        
+
+        <h1 style="text-align: left" id= "thirdQuestion"><i>How long</i> do you want to put your money on investment?(month(s))</h1>
+        <input type="number" id="timeHave" value=""><br>
+        <button onclick="myFunction()">Result</button>
+        <br>
+
+        <p>We suggestion you choose:</p>
+        <p id="investType"></p>
+		<p id="interestRate"></p>
+		<p id="time"></p>
+		<p id="moneyMade"></p>
+        <div id="explanation"></div>
+
+    </body>
+</html>
